@@ -31,8 +31,8 @@ const registerUser = async (req,res) => {
     //     // debug : true,
     //     secureConnection : false,
     //     auth : {
-    //         user : "dipshaj64@gmail.com",
-    //         pass : "dipshajk#64"
+    //         user : ""
+    //         pass : ""
     //     },
     //     tls:{
     //         rejectUnauthorized : true
