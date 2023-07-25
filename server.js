@@ -6,6 +6,8 @@ connectDb();
 app.use(express.json());
 
 app.use("/api/users",require("./routes/userRoute"));
+app.use("/api/product",require("./routes/productRoutes"));
+
 const port = process.env.PORT || 5006;
 app.listen(port,()=>{
     console.log("Server is running", port);
