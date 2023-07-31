@@ -27,4 +27,9 @@ const createProduct = async (req,res) =>{
         throw new Error("Requested data is not valid, Please try it again");
     }
 }
-module.exports = { createProduct };
+
+const projectAllGet = async (req,res) =>{
+    const allProject = await productModel.find();
+    res.json(allProject);
+}
+module.exports = { createProduct, projectAllGet };
